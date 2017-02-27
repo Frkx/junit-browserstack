@@ -83,6 +83,10 @@ public class BrowserStackJUnitTest {
         if(accessKey == null) {
             accessKey = (String) config.get("key");
         }
+        
+        capabilities.setCapability("browserstack.local", System.getenv("BROWSERSTACK_LOCAL"));
+        capabilities.setCapability("browserstack.localIdentifier", System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER"));
+
 
         if(capabilities.getCapability("browserstack.local") != null && capabilities.getCapability("browserstack.local") == "true"){
             l = new Local();
