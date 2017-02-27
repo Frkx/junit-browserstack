@@ -128,7 +128,7 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <includes>
-                                <include>com/browserstack/SingleTest.java</include>
+                                <include>com/browserstack/SingleTest1.java</include>
                             </includes>
                             <systemPropertyVariables>
                                 <config>single.conf.json</config>
@@ -168,7 +168,7 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <includes>
-                                <include>com/browserstack/SingleTest.java</include>
+                                <include>com/browserstack/SingleTest1.java</include>
                             </includes>
                             <systemPropertyVariables>
                                 <config>parallel.conf.json</config>
