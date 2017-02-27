@@ -10,7 +10,9 @@ public class SingleTest extends BrowserStackJUnitTest {
 
   @Test
   public void test() throws Exception {
-    driver.get("https://pastebin");
+    driver.get("https://pastebin.com");
+    driver.get("http://whatismyip.akamai.com/");
+    driver.get("http://google.com/ncr");
     WebElement element = driver.findElement(By.name("q"));
     element.sendKeys("BrowserStack");
     element.submit();
